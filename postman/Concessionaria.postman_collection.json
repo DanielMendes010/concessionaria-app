@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "56375a60-dbae-4c76-881f-b1f415a19e06",
+		"name": "Concessionaria",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16683939"
+	},
+	"item": [
+		{
+			"name": "Get Veiculos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/concessionaria/veiculos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"concessionaria",
+						"veiculos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Veiculo ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/concessionaria/veiculos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"concessionaria",
+						"veiculos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Carro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipo\": \"Carro\",\r\n    \"nome\": \"Astra\",\r\n    \"ano\": 2011,\r\n    \"modelo\": \"gtx\",\r\n    \"price\": 25.00,\r\n    \"carro_tipo\": \"hatch\",\r\n    \"portas\": 4,\r\n    \"direcao\": \"hidraulica\",\r\n    \"motor\": 2.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/concessionaria/veiculos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"concessionaria",
+						"veiculos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Moto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipo\" : \"Moto\",\r\n    \"nome\" : \"Intruder\",\r\n    \"ano\" : 2013,\r\n    \"modelo\" : \"Suzuki\",\r\n    \"price\" : 9.00,\r\n    \"cilindradas\" : 25,\r\n    \"moto_tipo\" : null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/concessionaria/veiculos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"concessionaria",
+						"veiculos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Veiculo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipo\": \"Carro\",\r\n    \"nome\": \"Astra\",\r\n    \"ano\": 2008,\r\n    \"modelo\": \"gtx\",\r\n    \"price\": 25.000,\r\n    \"carro_tipo\": \"sedã\",\r\n    \"portas\": 4,\r\n    \"direcao\": \"hidraulica\",\r\n    \"motor\": 2.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/concessionaria/veiculos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"concessionaria",
+						"veiculos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Moto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipo\" : \"Moto\",\r\n    \"nome\" : \"Intruder\",\r\n    \"ano\" : 2009,\r\n    \"modelo\" : \"Suzuki\",\r\n    \"price\" : 6.000,\r\n    \"cilindradas\" : 25,\r\n    \"moto_tipo\" : null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/concessionaria/veiculos/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"concessionaria",
+						"veiculos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Veiculo ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/concessionaria/veiculos/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"concessionaria",
+						"veiculos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Veiculos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/concessionaria/veiculos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"concessionaria",
+						"veiculos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
