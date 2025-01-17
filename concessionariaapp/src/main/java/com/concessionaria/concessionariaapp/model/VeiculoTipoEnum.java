@@ -1,4 +1,4 @@
-package com.concessionaria.concessionariaapp.util;
+package com.concessionaria.concessionariaapp.model;
 
 
 import com.fasterxml.jackson.annotation.JsonCreator;
